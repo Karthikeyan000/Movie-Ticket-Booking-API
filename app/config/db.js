@@ -5,9 +5,9 @@ require("dotenv").config({
 // database configuration's
 
 module.exports = {
-  HOST: "dpg-cnjlkoacn0vc738e2n90-a",
-  USER: "ticketbooking",
-  PASSWORD: "1x5DEA3DFfTdL4i4tBTNaF0ZBYlqdeF6",
-  DB: "ticketbooking",
-  dialect: "postgres",
+  HOST: process.env.DB_HOST,
+  USER: process.env.DB_USER,
+  PASSWORD: process.env.DB_PASSWORD,
+  DB: process.env.DB_NAME,
+  dialect: process.env.DB_DIALECT,
 };
